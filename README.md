@@ -6,12 +6,12 @@ A simple MCP server on Cloudflare Workers that returns the current timestamp.
 
 ### MCP Discovery
 ```
-GET https://time.qdp.qzz.io/
+GET /
 ```
 
 ### Get Time
 ```
-POST https://time.qdp.qzz.io/tools/get_time
+POST /tools/get_time
 ```
 
 Response:
@@ -34,5 +34,5 @@ Response:
 
 ### Health
 ```
-GET https://time.qdp.qzz.io/health
+GET /health
 ```
