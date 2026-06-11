@@ -1,0 +1,38 @@
+# time-mcp-worker
+
+A simple MCP server on Cloudflare Workers that returns the current timestamp.
+
+## Usage
+
+### MCP Discovery
+```
+GET https://time.qdp.qzz.io/
+```
+
+### Get Time
+```
+POST https://time.qdp.qzz.io/tools/get_time
+```
+
+Response:
+```json
+{
+  "result": {
+    "unix": 1749600000,
+    "unix_ms": 1749600000000,
+    "iso": "2026-06-11T16:00:00.000Z",
+    "utc": "Wed, 11 Jun 2026 16:00:00 GMT",
+    "timezones": {
+      "Asia/Shanghai": "2026/6/12 00:00:00",
+      "America/New_York": "6/11/2026, 12:00:00 PM",
+      "Europe/London": "11/06/2026, 17:00:00",
+      "Asia/Tokyo": "2026/6/12 01:00:00"
+    }
+  }
+}
+```
+
+### Health
+```
+GET https://time.qdp.qzz.io/health
+```
