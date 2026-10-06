@@ -1,3 +1,8 @@
 name = "time-mcp-worker"
 main = "src/index.js"
+# Pin to a date that is not in the future relative to the wrangler/workerd version in use.
 compatibility_date = "2026-06-12"
+workers_dev = true
+
+[observability]
+enabled = true
