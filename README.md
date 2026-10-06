@@ -146,7 +146,7 @@ Legacy `POST /tools/get_time` response:
       "Asia/Shanghai": "2026/6/12 00:00:00",
       "America/New_York": "6/11/2026, 12:00:00 PM",
       "Europe/London": "11/06/2026, 17:00:00",
-      "Asia/Tokyo": "2026/6/12 01:00:00"
+      "Asia/Tokyo": "2026/6/12 1:00:00"
     }
   }
 }
